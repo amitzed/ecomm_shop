@@ -1,4 +1,4 @@
-# [eComm Shop](https://github.com/amitzed/ecomm_shop)
+# [eComm Shop](https://ecomm-amitzaman.herokuapp.com/)
 
 
 This README would normally document whatever steps are necessary to get the
