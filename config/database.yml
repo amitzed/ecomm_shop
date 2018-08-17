@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: mymemes_development
+  database: ecomm_shop_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: mymemes_test
+  database: ecomm_shop_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: mymemes_production
-  username: mymemes
-  password: <%= ENV['MYMEMES_DATABASE_PASSWORD'] %>
+  database: ecomm_shop_production
+  username: ecomm_shop
+  password: <%= ENV['ECOMM_SHOP_DATABASE_PASSWORD'] %>

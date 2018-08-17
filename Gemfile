@@ -33,12 +33,30 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'bulma-rails', '~> 0.6.1'
+#simple_form generates simple forms outside of rails forms
+gem 'simple_form'
+#Devise is user authentication system
+gem 'devise', '~> 4.4'
+gem 'gravatar_image_tag', '~> 1.2'
+#carrierwave is an image upload service (Paperclip is another option)
+gem 'carrierwave'
+# mini_magick is required by carrierwave
+gem 'mini_magick'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  # gives better error identifying
+  gem 'better_errors', '~> 2.4'
+  # guard is a ruby task-runner
+  gem 'guard', '~> 2.14', '>= 2.14.1'
+  #  guard-livereload refreshes changes as they are made
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  # Easy installation and use of chromedriver to run system tests with Chrome
 end
 
 group :development do
@@ -54,7 +72,7 @@ group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
-  # Easy installation and use of chromedriver to run system tests with Chrome
+
   gem 'chromedriver-helper'
 end
 
