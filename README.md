@@ -1,4 +1,5 @@
-# eComm Shop
+# [eComm Shop](https://github.com/amitzed/ecomm_shop)
+
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
