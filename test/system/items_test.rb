@@ -17,8 +17,8 @@ class ItemsTest < ApplicationSystemTestCase
     fill_in "Brand", with: @item.brand
     fill_in "Condition", with: @item.condition
     fill_in "Description", with: @item.description
-    fill_in "Made In", with: @item.made-in
-    fill_in "Model", with: @item.model
+    fill_in "Origin", with: @item.origin
+    fill_in "Product", with: @item.product
     fill_in "Price", with: @item.price
     fill_in "Title", with: @item.title
     click_on "Create Item"
@@ -34,8 +34,8 @@ class ItemsTest < ApplicationSystemTestCase
     fill_in "Brand", with: @item.brand
     fill_in "Condition", with: @item.condition
     fill_in "Description", with: @item.description
-    fill_in "Made In", with: @item.made-in
-    fill_in "Model", with: @item.model
+    fill_in "Made In", with: @item.origin
+    fill_in "Product", with: @item.product
     fill_in "Price", with: @item.price
     fill_in "Title", with: @item.title
     click_on "Update Item"

@@ -2,18 +2,18 @@
 
 one:
   brand: MyString
-  model: MyString
+  product: MyString
   description: MyText
   condition: MyString
-  made-in: MyString
+  origin: MyString
   title: MyString
   price: 9.99
 
 two:
   brand: MyString
-  model: MyString
+  product: MyString
   description: MyText
   condition: MyString
-  made-in: MyString
+  origin: MyString
   title: MyString
   price: 9.99

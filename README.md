@@ -24,7 +24,7 @@ Things you may want to cover:
 
 * ...
 
-rails g scaffold Item brand:string model:string description:text condition:string origin:string title:string price:decimal
+rails g scaffold Item brand:string product:string description:text condition:string origin:string title:string price:decimal
 
 After creating uploader:
 rails g migration add_image_to_items image:string
