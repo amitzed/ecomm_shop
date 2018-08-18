@@ -24,4 +24,4 @@ Things you may want to cover:
 
 * ...
 
-rails g scaffold Item brand:string model:string description:text condition:string made-in:string title:string price:decimal
+rails g scaffold Item brand:string model:string description:text condition:string origin:string title:string price:decimal

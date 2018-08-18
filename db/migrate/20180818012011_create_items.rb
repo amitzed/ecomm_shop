@@ -5,9 +5,9 @@ class CreateItems < ActiveRecord::Migration[5.2]
       t.string :model
       t.text :description
       t.string :condition
-      t.string :made-in
+      t.string :origin
       t.string :title
-      t.decimal :price
+      t.decimal :price, precision: 5, scale: 2, default: 0
 
       t.timestamps
     end
