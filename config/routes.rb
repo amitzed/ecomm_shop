@@ -4,6 +4,6 @@ Rails.application.routes.draw do
     registrations: 'registrations'
   }
   # below is the home page
-  root 'store#index'
+  root 'items#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
