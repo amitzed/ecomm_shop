@@ -23,3 +23,5 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+rails g scaffold Item brand:string model:string description:text condition:string made-in:string title:string price:decimal
