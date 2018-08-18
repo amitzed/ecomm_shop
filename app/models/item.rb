@@ -1,6 +1,6 @@
 class Item < ApplicationRecord
-  mount_uploader :image, ImageUploader
   belongs_to :user, optional: true
+  mount_uploader :image, ImageUploader
 
   validates :title, :brand, :price, :product, presence: true
   validates :description, length: { maximum: 1000, too_long: "%{count} characters reached maximum allowed "}
