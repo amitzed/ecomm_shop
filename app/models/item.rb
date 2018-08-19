@@ -8,7 +8,7 @@ class Item < ApplicationRecord
   validates :title, :brand, :price, :product, presence: true
   validates :description, length: { maximum: 1000, too_long: "%{count} characters reached maximum allowed "}
   validates :title, length: { maximum: 140, too_long: "%{count} characters reached maximum allowed "}
-  validates :price, numericality: { only_integer: true }, length: { maximum: 7 }
+  validates :price, length: { maximum: 7 }
 
   BRAND = %w{ 3Skulls
 -A-

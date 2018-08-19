@@ -1,39 +1,73 @@
-<p id="notice"><%= notice %></p>
+<% content_for :body_class, 'bg-light' %>
 
-<p>
-  <strong>Brand:</strong>
-  <%= @item.brand %>
-</p>
+<section class="section item-show">
+  <div class="columns">
+    <div class="column is-8">
+      <h1 class="title is-2"><%= @item.title %></h1>
 
-<p>
-  <strong>Product:</strong>
-  <%= @item.product %>
-</p>
+      <ul class="pv1">
+        <% if @item.brand? %>
+        <li class="inline-block pr3"><%= @item.brand %></li>
+        <% end %>
 
-<p>
-  <strong>Description:</strong>
-  <%= @item.description %>
-</p>
+        <li class="inline-block pr3"><%= @item.product %></li>
 
-<p>
-  <strong>Condition:</strong>
-  <%= @item.condition %>
-</p>
+        <% if @item.condition? %>
+        <li class="inline-block pr3"><%= @item.condition %></li>
+        <% end %>
+      </ul>
 
-<p>
-  <strong>Origin:</strong>
-  <%= @item.origin %>
-</p>
+      <div class="feature-image">
+        <%= image_tag(@item.image_url(:default)) %>
+      </div>
 
-<p>
-  <strong>Title:</strong>
-  <%= @item.title %>
-</p>
+      <div class="content pa4 mt3 bg-white border-radius-3">
 
-<p>
-  <strong>Price:</strong>
-  <%= @item.price %>
-</p>
+      <h3 class="subtitle is-4">Item Description</h3>
+      <%= @item.description %>
 
-<%= link_to 'Edit', edit_item_path(@item) %> |
-<%= link_to 'Back', items_path %>
+
+      <h3 class="subtitle is-4 pt5">Item Specifications</h3>
+
+      <table class="table is-narrow">
+        <% if @item.condition %>
+        <tr>
+          <td class="has-text-weight-bold">Condition:</td>
+          <td><%= @item.condition %></td>
+        </tr>
+        <% end %>
+
+        <% if @item.origin %>
+          <tr>
+            <td class="has-text-weight-bold">Country of Origin:</td>
+            <td><%= @item.origin %></td>
+          </tr>
+        <% end %>
+
+        <% if @item.brand %>
+          <tr>
+            <td class="has-text-weight-bold">Brand:</td>
+            <td><%= @item.brand %></td>
+          </tr>
+        <% end %>
+
+        <tr>
+          <td class="has-text-weight-bold">Product:</td>
+          <td><%= @item.product %></td>
+        </tr>
+      </table>
+    </div>
+    </div>
+    <div class="column is-3 is-offset-1">
+      <div class="bg-white pa4 border-radius-3">
+        <h4 class="title is-5 has-text-centered"><%= number_to_currency(@item.price) %></h4>
+        <p class="has-text-centered mb4">Seller: <%= @item.user.name %></p>
+        <%= button_to 'Add to cart', '#', class: 'button is-warning add-to-cart' %>
+      </div>
+    </div>
+  </div>
+
+  <% if item_author(@item) %>
+    <%= link_to 'Edit', edit_item_path(@item), class: 'button' %>
+  <% end %>
+</section>
