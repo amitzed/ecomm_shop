@@ -31,3 +31,6 @@ rails g migration add_image_to_items image:string
 
 To assign user account to the item that they are selling:
 rails g migration add_user_id_to_items user_id:integer
+
+Created CART model:
+rails g scaffold Cart --no-stylesheets --no-javascript
