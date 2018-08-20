@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: ecomm_shop_production
   username: ecomm_shop
   password: <%= ENV['ECOMM_SHOP_DATABASE_PASSWORD'] %>
