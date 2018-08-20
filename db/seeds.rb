@@ -40,7 +40,7 @@ Item.create!([{
 {
   title: "Bissel Vaccum non-working for parts",
   brand: "BISSEL",
-  product: "Antique Pro SSS Limited",
+  product: "Vacuum",
   description: "Turpis egestas integer eget aliquet nibh. Non nisi est sit amet facilisis magna etiam tempor.",
   condition: "Poor",
   origin: "Algeria",
