@@ -46,3 +46,7 @@ To add QUANTITY to line items:
 rails g migration add_quantity_to_line_items
 then...
 rails db:migrate
+
+Created Seed:
+then...
+bash $  rails db:seed
