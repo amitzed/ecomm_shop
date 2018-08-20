@@ -261,7 +261,7 @@ DEPENDENCIES
   capybara (>= 2.15)
   carrierwave
   chromedriver-helper
-  coffee-rails (~> 4.2)
+  coffee-rails (= 4.2.2)
   devise (~> 4.4)
   gravatar_image_tag (~> 1.2)
   guard (~> 2.14, >= 2.14.1)
