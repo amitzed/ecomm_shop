@@ -33,4 +33,16 @@ To assign user account to the item that they are selling:
 rails g migration add_user_id_to_items user_id:integer
 
 Created CART model:
-rails g scaffold Cart --no-stylesheets --no-javascript
+  rails g scaffold Cart --no-stylesheets --no-javascript
+  then...
+  rails db:migrate
+
+THEN create line-item models: (the item will reference a line item and the cart will belong to a line item)
+  rails g scaffold LineItem item:references cart:belongs_to
+  then...
+  rails db:migrate
+
+To add QUANTITY to line items:
+rails g migration add_quantity_to_line_items
+then...
+rails db:migrate
