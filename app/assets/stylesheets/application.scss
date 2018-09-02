@@ -20,6 +20,10 @@
  @import "bulma";
  @import "functions";
 
+body {
+  background-color: red;
+}
+
  .notification {
    border-radius: 0;
  }
