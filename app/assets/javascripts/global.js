@@ -5,6 +5,7 @@ document.addEventListener("turbolinks:load", fuction() {
   if(notification) {
     window.setTimeout(function() {
       notification.style.display = "none";
-    }, 3000);
+    }, 4000);
   }
+
 });
