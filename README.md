@@ -2,6 +2,12 @@
 
 Created using Ruby on Rails, PostgreSQL, Bulma
 
+rails s
+postgres -D /usr/local/var/postgres
+psql ecomm_shop_development
+sass --watch scss:css
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
