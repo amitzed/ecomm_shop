@@ -1,4 +1,13 @@
 class Item < ApplicationRecord
+
+  if(ENV['DATABASE_URL'])
+        uri = URI.parse(ENV['DATABASE_URL'])
+        DB = PG.connect(uri.hostname, uri.port, nil, nil, uri.path[1..-1], uri.user, uri.password)
+    else
+        DB = PG.connect(host: "localhost", port: 5432, dbname: 'ecomm_shop_development')
+    end
+
+
   before_destroy :not_referenced_by_any_line_item
   belongs_to :user, optional: true
   has_many :line_items
