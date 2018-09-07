@@ -7,6 +7,13 @@ postgres -D /usr/local/var/postgres
 psql ecomm_shop_development
 sass --watch scss:css
 
+Heroku is already set up to use Postgres, so you don't need any addons. To access your DB, log into heroku psql:
+
+heroku pg:psql
+
+Now you can copy the create/insert commands that you used for your local setup.
+
+
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
