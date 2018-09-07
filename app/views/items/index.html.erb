@@ -29,13 +29,13 @@
 
       <h3 class="fw7 f4 title"><%= link_to item.title, item %></h3>
 
-      <p class="has-text-gray fg pt1">Seller: <%= item.user.name %></p>
+      <!-- <p class="has-text-gray fg pt1">Seller: <%= item.user.name %></p> -->
 
       <p class="f3 fw6 has-text-right pt2 price"><%= number_to_currency(item.price) %></p>
 
       <% if item_author(item) %>
          <%= link_to 'Edit', edit_item_path(item), class: "button is-small" %>
-         <%= link_to 'Delete', item, method: :delete, data: { confirm: "Sure you want to delete?" }, class: "button is-small" %>
+         <%= link_to 'Delete', item, method: :delete, data: { confirm: "Are You Sure ?" }, class: "button is-small" %>
       <% end %>
 
     </div>
