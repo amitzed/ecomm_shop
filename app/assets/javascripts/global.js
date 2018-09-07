@@ -1,6 +1,6 @@
-document.addEventListener("turbolinks:load", fuction() {
+document.addEventListener("turbolinks:load", function() {
 
-  var notification = document.querySelector('.global-notification');
+  const notification = document.querySelector('.global-notification');
 
   if(notification) {
     window.setTimeout(function() {
