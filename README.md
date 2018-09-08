@@ -10,6 +10,20 @@ sass --watch scss:css
 user@gmail.com
 123456
 
+##### Dev Notes:
+Heroku with Ruby/SQL
+-> Heroku is already set up to use Postgres, so you don't need any addons. To access DB, log into heroku psql:
+
+##### heroku pg:psql
+
+To Remove Items from DB:
+##### delete from items where id = x;
+(to delete from database)
+
+To View Items, Users, etc from DB:
+##### delete from items where id = x;
+(to delete from database)
+
 
 
 This README would normally document whatever steps are necessary to get the
