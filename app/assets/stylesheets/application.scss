@@ -14,15 +14,19 @@
  *= require_self
  */
 
- $link: steelblue;
- $link-hover: #222;
+ $link: #DF6127;
+ $link-hover: #58B7B8;
 
  @import "bulma";
  @import "functions";
 
 
 body {
-  background-color: #CCC0AF;
+  background-color: #12403E;
+}
+
+h1 {
+  text-align: center;
 }
 
 h5 {
@@ -38,8 +42,65 @@ h5 {
  }
 
  .titleMain {
-   color: #CCC0AF;
-   font-size: 50px;
+   // font-family: 'Kavoon', cursive;
+   font-family: 'VT323', monospace;
+   // font-family: 'Alfa Slab One', cursive;
+   // font-family: 'Bangers', cursive;
+   // font-family: 'Unlock', cursive;
+   color: #F8CE3D;
+   font-size: 60px;
+
+   background: #4C381E;
+  background-image: url("/images/shockbg.gif");
+  box-shadow: 5px 2px 40px #FFEDA7, -5px -2px 40px #32CCB0;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-left: 0;
+  border-top: 0;
+  position: relative;
+  min-height: 100px;
+  border-radius: 50%;
+
+  -webkit-animation: background-move 60s ease infinite;
+  -moz-animation: background-move 60s ease infinite;
+  animation: background-move 60s ease infinite;
+
+  text-align: center;
+
+ }
+
+ .title {
+   font-family: 'Alfa Slab One', cursive;
+   font-weight: lighter;
+ }
+ .pv4 {
+   color: #F8CE3D;
+ }
+
+ .f4, .f5 {
+   color: #F8CE3D;
+   font-family: 'VT323', monospace;
+   font-size: 30px;
+   font-weight: bolder;
+ }
+ section {
+   color: #F8CE3D;
+   font-family: 'Alfa Slab One', cursive;
+   font-size: 17px;
+ }
+
+ .sellBtn {
+   padding-top: 40px;
+ }
+
+
+ .label {
+   font-family: 'VT323', monospace;
+   color: #F8CE3D;
+   font-size: 20px;
+   font-weight: lighter;
  }
 
  .item-index-grid {
@@ -51,7 +112,7 @@ h5 {
      border-top: 0;
      position: relative;
      min-height: 375px;
-     border-color: blue;
+     border-color: #F2E4B1;
 
      .title {
        line-height: 1.6rem;
@@ -60,7 +121,7 @@ h5 {
        position: absolute;
        bottom: 10px;
        right: 10px;
-       color: #a00000;
+       color: #F8CE3D;
      }
      .edit-delete-btn {
        position: absolute;
@@ -93,3 +154,45 @@ h5 {
      }
    }
  }
+
+
+ /* Animations */
+@keyframes size-in {
+    from {
+      transform: scale(.1);
+    }
+    to {
+      transform: scale(1);
+    }
+}
+
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+@-webkit-keyframes background-move {
+     0%{background-position:0% 50%}
+     50%{background-position:100% 50%}
+     100%{background-position:0% 50%}
+ }
+ @-moz-keyframes background-move {
+     0%{background-position:0% 50%}
+     50%{background-position:100% 50%}
+     100%{background-position:0% 50%}
+ }
+ @keyframes background-move {
+     0%{background-position:0% 50%}
+     50%{background-position:100% 50%}
+     100%{background-position:0% 50%}
+ }
+
+ /* @keyframes snow {
+     from {background-position: 0px 0px, 0px 0px, 0px 0px;}
+     to {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+ } */

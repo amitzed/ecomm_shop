@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>eBasket</title>
+    <title>electroShop Therapy</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Bangers|Kavoon|Unlock|VT323" rel="stylesheet">
+
     <%= csrf_meta_tags %>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +15,7 @@
 
   <body class="<%= yield (:body_class) %>">
     <% if flash[:notice] %>
-      <div class="notification is-success global-notification">
+      <div class="notification is-info global-notification">
         <p class="notice"><%= notice %></p>
       </div>
     <% end %>
@@ -24,9 +27,15 @@
      <nav class="navbar is-link is-primary" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <%= link_to root_path, class:"navbar-item" do %>
-          <h1 class="titleMain">eBasket</h1>
+          <h1 class="titleMain">electroShop Therapy</h1>
 
         <% end  %>
+
+        <div class="sellBtn">
+          <% if user_signed_in? %>
+            <%= link_to 'Sell Your Item', new_item_path, class: "navbar-item button is-warning  is-outlined is-rounded" %>
+        </div>
+
       <div class="navbar-burger burger" data-target="navbar">
         <span></span>
         <span></span>
@@ -40,7 +49,7 @@
             <div class="field is-grouped">
 
             <% if cart_has_items %>
-              <%= link_to cart_path(@cart), class:"navbar-item button is-warning" do %>
+              <%= link_to cart_path(@cart), class:"navbar-item button is-dark" do %>
               <span class="icon is-small">
                 <i class="fa fa-shopping-basket"></i>
               </span>
@@ -50,8 +59,7 @@
               <% end %>
             <% end %>
 
-            <% if user_signed_in? %>
-              <%= link_to 'Sell Your Item', new_item_path, class: "navbar-item button is-success is-rounded" %>
+
 
               <div class="navbar-item has-dropdown is-hoverable">
                 <%= link_to 'My Account', edit_user_registration_path, class: "navbar-link" %>

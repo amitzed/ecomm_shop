@@ -1,9 +1,9 @@
 <% content_for :header do %>
-<section class="hero is-warning">
+<section class="hero is-light">
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
-        Available Items
+        Newly Listed
       </h1>
     </div>
   </div>
@@ -35,8 +35,8 @@
 
       <p class="f3 fw6 has-text-left pt2 edit-delete-btn">
         <% if item_author(item) %>
-           <%= link_to 'Edit', edit_item_path(item), class: "button is-small is-dark is-rounded" %>
-           <%= link_to 'X', item, method: :delete, data: { confirm: "Confirm Delete" }, class: "button is-small is-danger is-rounded" %>
+           <%= link_to 'Edit', edit_item_path(item), class: "button is-small is-light is-outlined is-rounded" %>
+           <%= link_to 'X', item, method: :delete, data: { confirm: "Confirm Delete" }, class: "button is-small is-danger is-outlined is-rounded" %>
         <% end %>
       </p>
 

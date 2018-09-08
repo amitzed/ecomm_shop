@@ -1,5 +1,5 @@
 <div class="keep-shopping pv1 mt4 has-text-right">
-  <%= link_to 'Continue Shopping', items_path, class: 'button is-info is-rounded' %>
+  <%= link_to 'Continue Shopping', items_path, class: 'button is-success is-rounded is-inverted is-outlined' %>
 </div>
 <hr />
 <section class="section">
@@ -7,11 +7,11 @@
 
   <div class="columns">
     <div class="column">
-      <%= button_to 'Dump Basket', @cart, method: :delete, data: { confirm: "Confirm Basket Dump " }, class: "button is-danger is-rounded" %>
+      <%= button_to 'Dump Basket', @cart, method: :delete, data: { confirm: "Confirm Basket Dump " }, class: "button is-danger is-rounded is-outlined" %>
     </div>
     <div class="column total has-text-right">
-      <h4 class="title is-4">
-        <span class="f5 has-text-grey">Total:</span> <%= number_to_currency(@cart.total_price) %>
+      <h4 class="title is-4 has-text-light">
+        <span class="f5">Total:</span> <%= number_to_currency(@cart.total_price) %>
       </h4>
     </div>
   </div>
