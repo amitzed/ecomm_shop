@@ -23,11 +23,11 @@
 
       <div class="content pa4 mt3 bg-white border-radius-3">
 
-      <h3 class="subtitle is-4">Item Description</h3>
+      <h3 class="subtitle is-4">About This Item</h3>
       <%= @item.description %>
 
 
-      <h3 class="subtitle is-4 pt5">Item Specifications</h3>
+      <h3 class="subtitle is-4 pt5">Specifications</h3>
 
       <table class="table is-narrow">
         <% if @item.condition %>
@@ -52,7 +52,7 @@
         <% end %>
 
         <tr>
-          <td class="has-text-weight-bold">Product:</td>
+          <td class="has-text-weight-bold">Type of Product:</td>
           <td><%= @item.product %></td>
         </tr>
       </table>

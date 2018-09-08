@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Carts</h1>
+<h1>Baskets</h1>
 
 <table>
   <thead>
@@ -14,7 +14,7 @@
       <tr>
         <td><%= link_to 'Show', cart %></td>
         <td><%= link_to 'Edit', edit_cart_path(cart) %></td>
-        <td><%= link_to 'Destroy', cart, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', cart, method: :delete, data: { confirm: 'Confirm' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -22,4 +22,4 @@
 
 <br>
 
-<%= link_to 'New Cart', new_cart_path %>
+<%= link_to 'New Basket', new_cart_path %>

@@ -5,8 +5,11 @@
 .item-show {
   .feature-image img {
     width: 100%;
+    border-radius: 10%;
   }
+
   .add-to-cart {
+    border-radius: 50%;
     width: 100%;
   }
 }

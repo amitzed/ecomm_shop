@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>eCommShop</title>
+    <title>eBasket</title>
     <%= csrf_meta_tags %>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,10 +21,11 @@
       <p class="alert"><%= alert %></p>
     </div>
     <% end %>
-     <nav class="navbar is-warning" role="navigation" aria-label="main navigation">
+     <nav class="navbar is-link is-primary" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <%= link_to root_path, class:"navbar-item" do %>
-          <h1 class="title is-5">eCommShop</h1>
+          <h1 class="titleMain">eBasket</h1>
+
         <% end  %>
       <div class="navbar-burger burger" data-target="navbar">
         <span></span>
@@ -41,19 +42,19 @@
             <% if cart_has_items %>
               <%= link_to cart_path(@cart), class:"navbar-item button is-warning" do %>
               <span class="icon is-small">
-                <i class="fa fa-shopping-cart"></i>
+                <i class="fa fa-shopping-basket"></i>
               </span>
-              <span>Cart
+              <span>Basket
                 <%= cart_count_over_one %>
                 </span>
               <% end %>
             <% end %>
 
             <% if user_signed_in? %>
-              <%= link_to 'Sell', new_item_path, class: "navbar-item button is-dark" %>
+              <%= link_to 'Sell Your Item', new_item_path, class: "navbar-item button is-success is-rounded" %>
 
               <div class="navbar-item has-dropdown is-hoverable">
-                <%= link_to 'Account', edit_user_registration_path, class: "navbar-link" %>
+                <%= link_to 'My Account', edit_user_registration_path, class: "navbar-link" %>
                 <div class="navbar-dropdown is-right">
                   <%= link_to current_user.name, edit_user_registration_path, class:"navbar-item" %>
                   <%= link_to "Log Out", destroy_user_session_path, method: :delete, class:"navbar-item" %>
