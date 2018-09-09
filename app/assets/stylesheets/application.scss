@@ -24,13 +24,52 @@
 body {
   background-color: #12403E;
 }
+.pt4 {
+  background-color: #12403E;
+}
 
 h1 {
   text-align: center;
+
+   background: #58B7B8;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   border-radius: 70%;
 }
+
 
 h5 {
   font-size: 12px;
+}
+
+.hero-body {
+  // font-family: 'Kavoon', cursive;
+  font-family: 'VT323', monospace;
+  // font-family: 'Alfa Slab One', cursive;
+  // font-family: 'Bangers', cursive;
+  // font-family: 'Unlock', cursive;
+  color: #F8CE3D;
+  font-size: 60px;
+  text-align: center;
+
+   background: #12403E;
+   background-image: url("/images/cartLogo.png");
+   box-shadow: 5px 2px 40px #12403E, -5px -2px 40px #58B7B8;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-left: 0;
+   border-top: 0;
+   position: relative;
+   min-height: 100px;
+   border-radius: 10%;
+   // -webkit-animation: background-move 60s ease;
+   // -moz-animation: background-move 60s ease;
+   // animation: background-move 60s ease;
 }
 
  .notification {
@@ -49,26 +88,23 @@ h5 {
    // font-family: 'Unlock', cursive;
    color: #F8CE3D;
    font-size: 60px;
+   text-align: center;
 
-   background: #4C381E;
-  background-image: url("/images/shockbg.gif");
-  box-shadow: 5px 2px 40px #FFEDA7, -5px -2px 40px #32CCB0;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-left: 0;
-  border-top: 0;
-  position: relative;
-  min-height: 100px;
-  border-radius: 50%;
-
-  -webkit-animation: background-move 60s ease infinite;
-  -moz-animation: background-move 60s ease infinite;
-  animation: background-move 60s ease infinite;
-
-  text-align: center;
-
+    background: #12403E;
+    background-image: url("/images/shockbg.gif");
+    box-shadow: 5px 2px 40px #12403E, -5px -2px 40px #58B7B8;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-left: 0;
+    border-top: 0;
+    position: relative;
+    min-height: 100px;
+    border-radius: 50%;
+    // -webkit-animation: background-move 60s ease;
+    // -moz-animation: background-move 60s ease;
+    // animation: background-move 60s ease;
  }
 
  .title {
@@ -95,6 +131,9 @@ h5 {
    padding-top: 40px;
  }
 
+.item {
+  border-radius: 20%;
+}
 
  .label {
    font-family: 'VT323', monospace;

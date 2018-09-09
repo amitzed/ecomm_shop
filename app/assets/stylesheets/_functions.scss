@@ -1,3 +1,6 @@
+
+/* Functional Styles: http://tachyons.io/docs/ */
+
 :root {
   --spacing-none: 0;
   --spacing-extra-small: .25rem;
@@ -8,8 +11,6 @@
   --spacing-extra-extra-large: 8rem;
   --spacing-extra-extra-extra-large: 16rem;
 }
-
-/* Functional Styles: http://tachyons.io/docs/ */
 
 /* Padding http://tachyons.io/docs/layout/spacing/ */
 .pa0 { padding: var(--spacing-none); }
@@ -242,7 +243,7 @@
 }
 
 /* Color */
-.bg-gray { background-color: #f8f8f8; }
+.bg-gray { background-color: #58B7B8; }
 
 /* Font Size */
 .f1 { font-size: 3rem; }
@@ -251,7 +252,7 @@
 .f4 { font-size: 1.25rem; }
 .f5 { font-size: 1rem; }
 .f6 { font-size: .875rem; }
-.f7 { font-size: .75rem; } 
+.f7 { font-size: .75rem; }
 
 /* Font Weight */
 .fw4 { font-weight: 400; }
@@ -260,11 +261,11 @@
 .fw7 { font-weight: 600; }
 
 /* Border */
-.border-light { border: 1px solid #dddddd; }
-.border { border: 1px solid #dedede; }
-.border-bottom { border-bottom: 1px solid #dddddd; }
-.border-top { border-top: 1px solid #dddddd; }
-.border-right { border-right: 1px solid #dddddd; }
+.border-light { border: 1px solid #58B7B8; }
+.border { border: 1px solid #58B7B8; }
+.border-bottom { border-bottom: 1px solid #58B7B8; }
+.border-top { border-top: 1px solid #58B7B8; }
+.border-right { border-right: 1px solid #58B7B8; }
 
 .border-radius-3 { border-radius: 3px; }
 
@@ -276,5 +277,5 @@
 .block { display: block; }
 
 /* Background */
-.bg-white { background-color: white; }
-.bg-light { background-color: #F1F1F1; }
+.bg-white { background-color: #58B7B8; }
+.bg-light { background-color: #58B7B8; }
