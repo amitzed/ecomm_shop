@@ -23,27 +23,28 @@ Author: [Amit Zaman](https://amitzaman.com/)
 ##### Ruby on Rails
 ##### PostgreSQL
 ##### Bulma
-<br/>
 
+______________________
 #### Local Execution:
 rails s <br/>
 postgres -D /usr/local/var/postgres <br/>
 psql ecomm_shop_development <br/>
 sass --watch scss:css <br/>
-
+<br/>
+_____________________________
 ##### Dev Notes:
+<br/>
 Heroku with Ruby/SQL:
 -> Heroku is already set up to use Postgres, so you don't need any addons. To access DB, log into heroku psql:
 ###### heroku pg:psql
-
+<br/>
 To Remove Items from DB:
 ###### DELETE FROM items WHERE id = x;
 (to delete from database)
 
 To View Items, Users, etc from DB:
-###### DELETE FROM items WHERE id = x;
-(to delete from database)
-
+###### SELECT * FROM items;
+______________________________________
 
 * Ruby version
 2.5.0
