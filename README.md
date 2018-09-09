@@ -38,7 +38,7 @@ _____________________________
 Heroku with Ruby/SQL:
 -> Heroku is already set up to use Postgres, so you don't need any addons. To access DB, log into heroku psql:
 heroku pg:psql
-
+<br/>
 
 To Remove Items from DB:
 DELETE FROM items WHERE id = x;
