@@ -26,10 +26,10 @@ Author: [Amit Zaman](https://amitzaman.com/)
 <br/>
 
 #### Local Execution:
-rails s
-postgres -D /usr/local/var/postgres
-psql ecomm_shop_development
-sass --watch scss:css
+rails s <br/>
+postgres -D /usr/local/var/postgres <br/>
+psql ecomm_shop_development <br/>
+sass --watch scss:css <br/>
 
 ##### Dev Notes:
 Heroku with Ruby/SQL:
