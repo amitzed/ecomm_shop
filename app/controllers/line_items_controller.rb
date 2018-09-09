@@ -23,7 +23,7 @@ class LineItemsController < ApplicationController
 
     respond_to do |format|
       if @line_item.save
-        format.html { redirect_to @line_item.cart, notice: 'Item Added to Cart' }
+        format.html { redirect_to @line_item.cart, notice: 'Item Added to Basket' }
         format.json { render :show, status: :created, location: @line_item }
       else
         format.html { render :new }
@@ -35,7 +35,7 @@ class LineItemsController < ApplicationController
   def update
     respond_to do |format|
       if @line_item.update(line_item_params)
-        format.html { redirect_to @line_item, notice: 'Successfully Updated' }
+        format.html { redirect_to @line_item, notice: 'Item Updated' }
         format.json { render :show, status: :ok, location: @line_item }
       else
         format.html { render :edit }
@@ -48,7 +48,7 @@ class LineItemsController < ApplicationController
     @cart = Cart.find(session[:cart_id])
     @line_item.destroy
     respond_to do |format|
-      format.html { redirect_to cart_path(@cart), notice: 'Your Item Has Been Removed' }
+      format.html { redirect_to cart_path(@cart), notice: 'Your Item Has Been Dumped' }
       format.json { head :no_content }
     end
   end

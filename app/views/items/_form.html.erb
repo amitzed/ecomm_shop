@@ -94,7 +94,7 @@
                 <%= f.input :image, as: :file, input_html: { class:"file-input item-image" }, label: false, wrapper: false %>
                   <span class="file-cta">
                     <span class="file-icon"><i class="fa fa-cloud-upload"></i></span>
-                    <span class="file-label">Choose a file…</span>
+                    <span class="file-label">Upload Image</span>
                   </span>
               </label>
               </div>
@@ -106,7 +106,7 @@
         <div class="field is-grouped">
           <div class="control">
             <%= f.button :submit, class: 'button is-warning' %>
-            <%= link_to 'Cancel', items_path, class:'button is-light' %>
+            <%= link_to 'Cancel', items_path, class:'button is-medium is-danger is-outlined is-rounded' %>
           </div>
         </div>
 

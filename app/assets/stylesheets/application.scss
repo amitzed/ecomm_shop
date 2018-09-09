@@ -21,7 +21,7 @@
  @import "functions";
 
 
-body {
+body, html {
   background-color: #12403E;
 }
 .pt4 {
@@ -46,11 +46,7 @@ h5 {
 }
 
 .hero-body {
-  // font-family: 'Kavoon', cursive;
   font-family: 'VT323', monospace;
-  // font-family: 'Alfa Slab One', cursive;
-  // font-family: 'Bangers', cursive;
-  // font-family: 'Unlock', cursive;
   color: #F8CE3D;
   font-size: 60px;
   text-align: center;
@@ -67,10 +63,8 @@ h5 {
    position: relative;
    min-height: 100px;
    border-radius: 10%;
-   // -webkit-animation: background-move 60s ease;
-   // -moz-animation: background-move 60s ease;
-   // animation: background-move 60s ease;
 }
+
 
  .notification {
    border-radius: 0;
@@ -81,11 +75,7 @@ h5 {
  }
 
  .titleMain {
-   // font-family: 'Kavoon', cursive;
    font-family: 'VT323', monospace;
-   // font-family: 'Alfa Slab One', cursive;
-   // font-family: 'Bangers', cursive;
-   // font-family: 'Unlock', cursive;
    color: #F8CE3D;
    font-size: 60px;
    text-align: center;
@@ -102,9 +92,6 @@ h5 {
     position: relative;
     min-height: 100px;
     border-radius: 50%;
-    // -webkit-animation: background-move 60s ease;
-    // -moz-animation: background-move 60s ease;
-    // animation: background-move 60s ease;
  }
 
  .title {
@@ -113,6 +100,11 @@ h5 {
  }
  .pv4 {
    color: #F8CE3D;
+ }
+
+ #item_title, #item_price, #item_product, #item_description, #item_brand, #item_origin, #item_condition,
+tr  {
+   background-color: #F8CE3D;
  }
 
  .f4, .f5 {
@@ -132,6 +124,7 @@ h5 {
  }
 
 .item {
+  box-shadow: 5px 2px 40px #12403E, -5px -2px 40px #58B7B8;
   border-radius: 20%;
 }
 
@@ -192,6 +185,19 @@ h5 {
        right: 9px;
      }
    }
+ }
+
+ .button {
+   border-radius: 50%;
+   background-color: #F8CE3D;
+   // font-family: 'VT323', monospace;
+   // font-size: 25px;
+ }
+
+ strong {
+   color: #F8CE3D;
+   font-family: 'VT323', monospace;
+   font-size: 30px;
  }
 
 
