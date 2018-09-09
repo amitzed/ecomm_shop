@@ -98,11 +98,11 @@ h5 {
    font-family: 'Alfa Slab One', cursive;
    font-weight: lighter;
  }
- .pv4 {
+ .pv4, label, em {
    color: #F8CE3D;
  }
 
- #item_title, #item_price, #item_product, #item_description, #item_brand, #item_origin, #item_condition,
+ #user_email, #user_password, #user_password_confirmation, #item_title, #item_price, #item_product, #item_description, #item_brand, #item_origin, #item_condition,
 tr  {
    background-color: #F8CE3D;
  }
@@ -120,7 +120,11 @@ tr  {
  }
 
  .sellBtn {
-   padding-top: 40px;
+   padding-top: 25px;
+ }
+
+ .actions {
+   padding-bottom: 15px;
  }
 
 .item {
