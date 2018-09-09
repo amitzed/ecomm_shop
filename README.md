@@ -23,6 +23,7 @@ Author: [Amit Zaman](https://amitzaman.com/)
 ##### Ruby on Rails
 ##### PostgreSQL
 ##### Bulma
+##### SASS
 
 ______________________
 #### Local Execution:
